@@ -60,7 +60,9 @@ void scheduleAlarm() async {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home:Scaffold(appBar: AppBar(title: Text('Notif'),),
+    return MaterialApp(home:Scaffold(appBar: AppBar(title: Text('Notif'),style: TextStyle(
+         color: Colors.green
+)),
     body: RaisedButton(
       onPressed:(){
         scheduleAlarm();
